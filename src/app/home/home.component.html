@@ -1,0 +1,8 @@
+<h2>Home Page</h2>
+<ul>
+  <li *ngFor="let a of archives">
+    <a [routerLink]="['/archive', a.year, a.month]">
+      {{ a.year + "/" + a.month }}
+    </a>
+  </li>
+</ul>
